@@ -1,0 +1,9 @@
+fname = input("Enter file name: ")
+try:
+    fh = open(fname)
+except:
+    print("File name " + fname + " was not found")
+    quit()
+text = fh.read()
+utext = text.upper()
+print(utext.strip())
